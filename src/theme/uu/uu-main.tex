@@ -147,12 +147,19 @@
 \usepackage{calc}
 \setbeamersize{sidebar width right=2pt}
 \newlength{\myprogbarlength}
+\newlength{\myprogbarratio}
 \defbeamertemplate*{sidebar canvas right}{uu theme}
 {%
-  \vskip-2ex%starting at the top of the paper
-  \setlength{\myprogbarlength}{\paperheight*(\insertframenumber)/(\inserttotalframenumber)}
-  \usebeamercolor[bg]{sidebar canvas right}
-  {\hrule width 2pt height \myprogbarlength}
+% No draw if there is only one slide
+\ifnum\inserttotalframenumber=1
+\else
+\vskip-2ex%starting at the top of the paper
+\setlength{\myprogbarratio}{\paperheight/\inserttotalframenumber}
+\myprogbarlength=\myprogbarratio
+\multiply\myprogbarlength by \insertframenumber
+\usebeamercolor[bg]{sidebar canvas right}
+{\hrule width 2pt height \myprogbarlength}
+\fi
 }
 \fi
 
