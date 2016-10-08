@@ -95,6 +95,7 @@ For the sidebar layout:
 
 The handout mode is different. To access it, change the
 `\documentclass{beamer}` to
+
 	\documentclass[handout]{beamer}
 
 It doesn't look like the default mode (ie the beamer mode). Nobody
