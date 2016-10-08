@@ -94,9 +94,11 @@ For the sidebar layout:
 ## Handout mode
 
 The handout mode is different. To access it, change the
-`\documentclass{beamer}` to `\documentclass[handout]{beamer}`.  It
-doesn't look like the default mode (ie the beamer mode). Nobody needs
-the sidebar when we can have a quick look over all slides.  The
+`\documentclass{beamer}` to
+	\documentclass[handout]{beamer}
+
+It doesn't look like the default mode (ie the beamer mode). Nobody
+needs the sidebar when we can have a quick look over all slides.  The
 sidebar menu is used for long talks, like a lecture, which the
 audience needs the keep track of.
 
