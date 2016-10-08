@@ -4,7 +4,7 @@
 ## Installation
 
 * Download from GitHub
-* Copy the files into `[tex-dist]/[beamer]/themes/`
+* Copy the files into `[beamer location in your tex distribution]/themes/`
 * Run `texhash` (probably as `root`)
 
 ----
@@ -23,13 +23,14 @@ University theme. That is to say, you don't need to specify it
 yourself, it is done within the Uppsala theme directly.
 
 You consequently only need to specify the Uppsala theme, through
+
 	\documentclass{beamer}
 	\usetheme{Uppsala}
-
+	
 	\author[short version]{long version}
 	\date[short version]{long version}
 	\institute[short version]{long version}
-
+	
 	\begin{document}
 	%% For the title
 	\begin{frame}[plain]
@@ -59,7 +60,6 @@ grey logo of Uppsala University.
 A title page with Uppsala beamer theme:
 
 ![Example Title Page](example/img/title-page.jpg)
-
 
 A bulleted frame with Uppsala beamer theme:
 
@@ -117,6 +117,7 @@ It is advised though to combine the PDF output file with a
 option, but I didn't get it to work, and pdfnup is pretty handy.
 
 For a 2x2 slides handout:
+
 	$ pdfnup --nup "2x2" --offset ".25cm .25cm" --delta ".25cm .5cm" --frame true --scale 0.9 beamerUppsalaExample.pdf
 
 ![Example with PDFNup](example/img/pdfnup.jpg)
@@ -134,13 +135,16 @@ For a 2x2 slides handout:
 * Make sure that in plain mode, the sidebar width goes to size 0. That seems to be a bug in beamer itself.
 
 ----
-Author: Frédéric Haziza <daz@it.uu.se>
+## Final note
 
 In case you plan on hacking it, don't forget to leave a little note in
-your code, about where the theme comes from
+your code, about where the theme comes from.
 
 Enjoy the effort!
 
 If things really don't work for you, fall back to the beamer-supplied
 themes: I suggest Frankfurt for handouts and Copenhagen for beamer
 presentation, where you can set the color to red.
+
+----
+Frédéric Haziza <daz@it.uu.se>
