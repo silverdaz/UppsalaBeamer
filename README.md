@@ -4,29 +4,30 @@
 ## Installation
 
 * Download from GitHub
-* Copy the files into `[beamer location in your tex distribution]/themes/`
+* Copy the files into `<beamer-location-in-your-tex-distribution>/themes/`
 * Run `texhash` (probably as `root`)
 
 ----
 ## Background
 There are several mode in beamer:
-* A *beamer* mode, used for projector presentation
-* A *handout* mode
-* A *notes* mode, same as beamer but includes notes
-* A *trans* mode, used for transparencies
-* A *presentation* mode, that simply encompasses *beamer*, *handout* and *trans*.
+* A **beamer** mode, used for projector presentation
+* A **handout** mode
+* A **notes** mode, same as beamer but includes notes
+* A **trans** mode, used for transparencies
+* A **presentation** mode, that simply encompasses **beamer**, **handout** and **trans**.
 
 Eventhough it is possible to specify several modes in the files that
 you compile for a presentation, I have decided to create (and settle)
-the *beamer*, *trans* and *handout* mode for the Uppsala
+the **beamer**, **trans** and **handout** mode for the Uppsala
 University theme. That is to say, you don't need to specify it
 yourself, it is done within the Uppsala theme directly.
 
 You consequently only need to specify the Uppsala theme, through
 
+
 	\documentclass{beamer}
 	\usetheme{Uppsala}
-	
+
 	\author[short version]{long version}
 	\date[short version]{long version}
 	\institute[short version]{long version}
@@ -52,9 +53,9 @@ You consequently only need to specify the Uppsala theme, through
 
 The hereabove code would use the default options for the theme: A red
 sidebar with the menu under the logo of Uppsala University. In the
-foot line, we would see the *short date*, the *short
-institute* and the *short author*. The long version for author,
-date, and institute would appear on the *title page*, beside a
+foot line, we would see the **short date**, the **short
+institute** and the **short author**. The long version for author,
+date, and institute would appear on the **title page**, beside a
 grey logo of Uppsala University.
 
 A title page with Uppsala beamer theme:
@@ -70,14 +71,15 @@ A bulleted frame with Uppsala beamer theme:
 
 It is however possible to control few options.
 
-*\usetheme[options]{Uppsala}* where _options_ is a comma-separated list of the following words:
-* *numbers*: inserts the frame number in the footline (Note: it takes care of animations)
-* *totalnumber*: inserts a slash and the total number of frames in the footline (Note: doesn't appear without the numbers option)
-* *hideallsubsections*: removes the subsections from the menu, leaving only the top sections
-* *hideothersubsections*: removes all subsections from the menu but the currently active section.
-* *withnav*: inserts the navigation bar just above the short author (over the footline)
-* *mylogo*: inserts the navigation bar just above the short author (over the footline)
-* *noprogressbar*: hmmm guess...
+`\usetheme[options]{Uppsala}` where _options_ is a comma-separated list of the following words:
+
+* **numbers**: inserts the frame number in the footline (Note: it takes care of animations)
+* **totalnumber**: inserts a slash and the total number of frames in the footline (Note: doesn't appear without the numbers option)
+* **hideallsubsections**: removes the subsections from the menu, leaving only the top sections
+* **hideothersubsections**: removes all subsections from the menu but the currently active section.
+* **withnav**: inserts the navigation bar just above the short author (over the footline)
+* **mylogo**: inserts the navigation bar just above the short author (over the footline)
+* **noprogressbar**: hmmm guess...
 
 I gave those options because I don't want to lock the theme according to my taste only, but I like these options:
 
@@ -101,10 +103,10 @@ audience needs the keep track of.
 This is why I choose a top bar menu, with top sections only, no
 subsections and small bullets to show advancements. The color of the
 menu is black. The title keeps as background the red from the
-theme. The footline changes to *short date | title* without any
+theme. The footline changes to **short date | title** without any
 background.  I removed the institution, the author and the page number
 since that information is not necessary on each page for this version
-(Readers can find it on the *title page*)
+(Readers can find it on the **title page**)
 
 With this theme, the usefull information is kept for the students'
 handouts (and some space is gained on the side ... well ... little
@@ -113,7 +115,7 @@ space...)
 ![Handout Example](example/img/handout.jpg)
 
 It is advised though to combine the PDF output file with a
-*pdfnup*, to create several slides per page. Beamer has such an
+**pdfnup**, to create several slides per page. Beamer has such an
 option, but I didn't get it to work, and pdfnup is pretty handy.
 
 For a 2x2 slides handout:
